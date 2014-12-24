@@ -1,0 +1,23 @@
+name: obs-runservice
+version: 0.0.1
+keywords:
+  - webhook
+  - opensuse
+  - deploy
+description: Trigger Open Build Service(OBS) source service
+properties:
+  token:
+    type: string
+    required: true
+  url:
+    type: string
+    required: false
+    default: https://api.opensuse.org:443
+  project:
+    type: string
+    required: false
+    default: ""
+  package:
+    type: string
+    required: false
+    default: ""
